@@ -4,7 +4,14 @@
   "required": ["name", "directory"],
   "properties": {
     "name": { "type": "string" },
-    "git": { "type": "string" },
+    "git": { 
+      "type": "object",
+      "required": [ "url", "branch" ],
+      "properties": {
+        "url": { "type": "string" },
+        "branch": { "type": "string", "default": "master" }
+      }
+    },
     "directory": {
       "type": "object",
       "required": [ "view" ],
