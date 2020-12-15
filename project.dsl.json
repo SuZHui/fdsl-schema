@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["name", "directory"],
+  "properties": {
+    "name": { "type": "string" },
+    "git": { "type": "string" },
+    "directory": {
+      "type": "object",
+      "required": [ "view" ],
+      "properties": {
+        "view": { "type": "string" },
+        "api": { "type": "string" },
+        "component": { "type": "string" }
+      }
+    }
+  }
+}
