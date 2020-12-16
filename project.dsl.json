@@ -31,7 +31,7 @@
       "type": "object", "description": "输出配置项", "required": ["root"], "properties": {
         "root": { "type": "string", "description": "项目根路径"},
         "view": { "type": "string", "description": "路由页面文件夹"},
-        "api": { "type": "string", "description": "接口文件夹"},
+        "http": { "type": "string", "description": "接口文件夹"},
         "component": { "type": "string", "description": "公共组件文件夹"}
       }
     }
